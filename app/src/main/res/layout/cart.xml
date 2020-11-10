@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:layout_height="match_parent" android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_above="@id/rl"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/back"
+            android:layout_toLeftOf="@id/done"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/back_24dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="10dp"
+            android:gravity="center|left"
+            android:textColor="@color/white"
+            android:text="CART"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"></TextView>
+        <ImageView
+            android:id="@+id/done"
+            android:layout_marginRight="10dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_done_black_24dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"></ImageView>
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_margin="5dp"
+        android:id="@+id/rvItems"
+        android:layout_below="@id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></androidx.recyclerview.widget.RecyclerView>
+<include layout="@layout/empty_cart"></include>
+</LinearLayout>
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tvTotal"
+            android:drawablePadding="10dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginRight="10dp"
+            android:paddingRight="30dp"
+            android:gravity="center|right"
+            android:textColor="@color/white"
+            android:text="Rs.00"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"></TextView>
+
+    </RelativeLayout>
+</RelativeLayout>

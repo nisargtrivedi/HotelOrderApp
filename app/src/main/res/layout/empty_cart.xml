@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:visibility="gone"
+    android:id="@+id/rl"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_remove_shopping_cart_black_24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></ImageView>
+    <TextView
+        android:id="@+id/tv"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_below="@id/img"
+        android:gravity="center"
+        android:textColor="#000"
+        android:text="No items found."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></TextView>
+    <Button
+        android:layout_below="@id/tv"
+        android:layout_margin="20dp"
+        android:id="@+id/btnAdd"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:text="+ ADD ITEMS"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"></Button>
+
+</RelativeLayout>

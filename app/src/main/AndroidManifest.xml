@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    package="app.nisargapp.hotelorderapp">
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <application
+        android:usesCleartextTraffic="true"
+        android:name=".Utility.AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/pizza"
+        android:label="RC Pizza"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.Item_"></activity>
+        <activity android:name=".Activity.Detail_"></activity>
+        <activity android:name=".Activity.Cart_"></activity>
+        <activity android:name=".Activity.Customization_" android:label="Customization" android:theme="@style/Theme.AppCompat.DayNight.Dialog.MinWidth"></activity>
+        <activity android:name=".Activity.Bill_"></activity>
+        <activity android:name=".Activity.OrderStatus_"></activity>
+        <service android:name=".FCM.FCMMessage">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+    <dist:module dist:instant="true" />
+
+</manifest>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Activity.Detail_"
+    tools:showIn="@layout/detail">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="#000"
+            android:paddingLeft="10dp"
+            android:gravity="center|left"
+            android:background="@color/light_cream"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="PRICE"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"></TextView>
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:id="@+id/price"
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="30dp"></TextView>
+        <TextView
+            android:textColor="#000"
+            android:paddingLeft="10dp"
+            android:gravity="center|left"
+            android:background="@color/light_cream"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="SIZE"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"></TextView>
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:id="@+id/size"
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="30dp"></TextView>
+        <TextView
+            android:textColor="#000"
+            android:paddingLeft="10dp"
+            android:gravity="center|left"
+            android:background="@color/light_cream"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:id="@+id/detais"
+            android:text="DESCRIPTION"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"></TextView>
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></TextView>
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:text="ADD ITEM"
+            android:textColor="@color/white"
+            android:layout_margin="20dp"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"></Button>
+        <Button
+            android:id="@+id/btnShowCart"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:text="SHOW CART"
+            android:textColor="@color/white"
+            android:layout_margin="20dp"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"></Button>
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

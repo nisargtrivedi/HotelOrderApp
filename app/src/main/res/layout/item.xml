@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/back"
+            android:layout_toLeftOf="@id/cartImg"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/back_24dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="10dp"
+            android:gravity="center|left"
+            android:textColor="@color/white"
+            android:text="ITEM"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"></TextView>
+        <ImageView
+            android:id="@+id/cartImg"
+            android:layout_marginRight="10dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/cart_24dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"></ImageView>
+    </RelativeLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        app:tabMode="fixed"
+        app:tabIconTintMode="add"
+        app:tabBackground="@color/light_cream"
+        app:tabIndicatorColor="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/veg"
+            android:text="VEG"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize">
+
+        </com.google.android.material.tabs.TabItem>
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/nonveg"
+            android:text="NON-VEG"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize">
+
+        </com.google.android.material.tabs.TabItem>
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/other"
+            android:text="OTHER"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize">
+
+        </com.google.android.material.tabs.TabItem>
+    </com.google.android.material.tabs.TabLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_margin="5dp"
+        android:id="@+id/rvItems"
+        android:layout_below="@id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "976010892881",
+    "firebase_url": "https://hotelproject-7feaa.firebaseio.com",
+    "project_id": "hotelproject-7feaa",
+    "storage_bucket": "hotelproject-7feaa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:976010892881:android:c226bb0c206a1635af4a70",
+        "android_client_info": {
+          "package_name": "app.nisargapp.hotelorderapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "976010892881-ttuv28hsi1jrrdee9ii8vnehave4qrm1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.nisargapp.hotelorderapp",
+            "certificate_hash": "7eb8c142a1e85056792c0ba9ff94b87debd71596"
+          }
+        },
+        {
+          "client_id": "976010892881-9pl0ufsuv0lt7cijik551rvu8nrpv7dr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpIkUyjKio34sGDhlj2bDXc2yxx7RiRl8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "976010892881-9pl0ufsuv0lt7cijik551rvu8nrpv7dr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
